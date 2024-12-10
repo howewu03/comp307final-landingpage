@@ -7,14 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* General Styles */
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
             background-color: #ffffff;
+            overflow-x:hidden;
         }
 
-        /* Navbar Styles */
+        /* Navbar */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -57,8 +57,6 @@
 
         /* Hero Section */
         .hero {
-            width: 100%;
-            max-width: 100%;
             height: 110vh;
             background: url('heroimage.png') no-repeat;
             background-size: cover;
@@ -66,7 +64,6 @@
             background-position: center center;
             border-bottom-left-radius: 5em;
             border-bottom-right-radius:5em;
-            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -136,9 +133,11 @@
             color: #052657
         }
 
-        /* White section styles */
+
+        /* White section */
         .whitesection {
             display: flex;
+            width:100%;
             justify-content: center;
             align-items: center;
             background-color: #ffffff;
@@ -187,10 +186,13 @@
             object-fit: cover;
         }
 
-        /* Blue section styles */
+
+
+        /* Blue section */
 
         .bluesection {
             display: flex;
+            width: 100%;
             justify-content: center;
             align-items: center;
             background-color: #02476E;
@@ -236,11 +238,15 @@
             object-fit: cover;
         }
 
-        /* Last Section styles */
+
+        
+        /* Last Section */
 
         .last-section {
             height: 120vh;
-            background: url(heroimage2.png) no-repeat center center;
+            width: 100%;
+            background: url(heroimage2.png) no-repeat;
+            background-position: center center;
             background-size: cover;
             background-attachment: fixed;
             display: flex;
@@ -256,7 +262,9 @@
             gap:24px;
         }
 
-        /* Footer styles */
+
+
+        /* Footer */
 
         .footer {
             height:100%;
@@ -279,7 +287,6 @@
             gap: 10px;
         }
 
-        /* Logo Section */
         .footer-logo {
             flex: 1; 
             display: flex;
@@ -293,17 +300,15 @@
             object-fit: contain;
         }
 
-        /* Vertical Divider */
         .vertical-line {
             width: 0.5px;
             background-color: #39A6FF;
             margin: 0 10px;
             flex-shrink: 0;
-            height:120px;
+            height:150px;
             align-self: stretch;
         }
 
-        /* Text Content */
         .footer-text {
             flex: 7; 
             display: flex;
@@ -313,6 +318,460 @@
             font-size: 12px;
             line-height: 2;
         }
+
+
+
+
+
+        /* Modal styles */
+
+        .modal {
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 50vh;
+            height: 70%;
+            overflow:auto;
+            background: #ffffff;
+            margin: 10% auto; 
+            padding: 40px 40px 0;
+            border-radius: 1em; 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .modal h4 {
+            font-size: 32px;
+            font-weight: 400;
+            color: #000000;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .modal p {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(32, 32, 32, 0.7);
+            margin-bottom: 30px;
+        }
+
+        .modal .form-group {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .modal .form-group label {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .modal .form-group input {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(32, 32, 32, 0.7);
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .modal .btn {
+            background-color: rgba(57, 166, 255, 0.65);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .modal .btn:hover {
+            background-color: #39a6ff;
+        }
+
+        .modal .mfooter {
+            margin-top: 80px;
+            padding-bottom: 20px;
+            margin-left: -40px;
+            margin-right: -40px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+            border-bottom-left-radius: 1em;
+            border-bottom-right-radius: 1em;
+            background-color: #f3f3f3;
+        }
+
+        .modal .mfooter p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            margin: 0;
+        }
+
+        .modal .mfooter a {
+            font-size: 16px;
+            font-weight: 400;
+            color: #6ab6f4;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+        .modal .mfooter a:hover {
+            text-decoration: underline;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 40px;
+            font-weight: lighter;
+            color: #000;
+            cursor: pointer;
+        }
+
+
+
+
+
+    /* TABLET VIEW */
+
+    @media (max-width: 768px) and (min-width: 480px) {
+
+
+
+        /* Navbar - Tablet */
+        .navbar {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .navbar-logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .navbar .nav-links {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .navbar .nav-links a {
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+
+
+
+        /* Hero Section - Tablet */
+        .hero {
+            height: 90vh;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero h1.gradient, .last-section-h1gradient {
+            font-size: 40px;
+        }
+
+        .hero h2, .last-section-h2{
+            font-size: 16px;
+        }
+
+        .hero .buttons button {
+            font-size: 14px;
+            padding: 12px 18px;
+        }
+
+
+
+
+        /* White section - Tablet */
+        .whitesection .content {
+            flex-direction: column;
+            padding: 40px 20px;
+            gap: 20px;
+        }
+
+        .text-content h2 {
+            font-size: 24px;
+        }
+
+        .text-content p {
+            font-size: 14px;
+        }
+
+        .section-image {
+            width: 440px;
+            height: auto;
+        }
+
+        
+
+        /* Blue section - Tablet */
+
+        .bluesection .text-content h2 {
+            font-size: 24px;
+        }
+
+        .bluesection .text-content p {
+            font-size: 14px;
+         }
+
+        .bluesection .section-image {
+            width: 300px;
+            height: auto;
+        }
+
+
+        /* Footer - Tablet */
+
+        .vertical-line{
+            height:175px;
+        }
+
+        .footer-logo img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        .footer-text {
+            font-size: 12px;
+        }
+
+        /* Modal - Tablet */
+       
+        .modal{
+            width: 70vh;
+        }
+
+        .modal h4 {
+            font-size: 24px;
+        }
+
+        .modal p {
+            font-size: 14px;
+        }
+
+        .modal .form-group label {
+            font-size: 14px;
+        }
+
+        .modal .form-group input {
+            font-size: 14px;
+        }
+
+        .modal .btn {
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .modal .mfooter a{
+            font-size: 14px;
+        }
+
+        .modal .mfooter p{
+            font-size: 14px;
+        }
+        .modal .close{
+            font-size: 30px;
+        }
+  
+
+    }
+
+    
+
+    @media (max-width: 480px) {
+
+        /* Navbar - Mobile */
+        
+
+        .navbar-logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .navbar .nav-links {
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .navbar .nav-links a {
+            font-size: 12px;
+            padding: 3px 8px;
+        }
+
+        /* Hero Section - Mobile */
+        .hero {
+            height: 100vh;
+            padding: 10px;
+            border-radius: 0; 
+        }
+
+        .hero h1 {
+            font-size: 28px;
+        }
+
+        .hero h1.gradient, .last-section-h1gradient {
+            font-size: 28px;
+        }
+
+        .hero h2 {
+            font-size: 12px;
+        }
+
+        .hero .buttons button {
+            font-size: 12px;
+            padding: 10px 15px;
+            margin: 5px;
+        }
+
+        /* White Section - Mobile */
+        .whitesection {
+            width: auto;
+
+        }
+
+        .whitesection .content {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .text-content h2 {
+            font-size: 18px;
+        }
+
+        .text-content p {
+            font-size: 12px;
+        }
+
+        .section-image {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Blue Section - Mobile */
+        .bluesection {
+                padding: 20px;
+        }
+
+        .bluesection .content {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .bluesection .text-content h2 {
+            font-size: 18px;
+        }
+
+        .bluesection .text-content p {
+            font-size: 12px;
+        }
+
+        .bluesection .section-image {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Last Section - Mobile */
+        .last-section {
+            width: auto;
+            height: 100vh; 
+            padding: 20px;
+        }
+
+        .last-section .content {
+            gap: 15px;
+        }
+
+        .last-section h2 {
+            font-size: 16px;
+        }
+
+        .last-section h1 {
+            font-size: 24px;
+        }
+
+        .last-section button {
+            font-size: 12px;
+            padding: 10px 15px;
+        }
+
+        /* Footer - Mobile */
+        .footer {
+            padding: 10px;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .footer-logo img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .vertical-line {
+            display: none;
+        }
+
+        .footer-text {
+            font-size: 10px;
+        }
+
+        /* Modal - Mobile */
+        .modal {
+            width: 60%;
+        }
+
+        .modal h4 {
+            font-size: 18px;
+        }
+
+        .modal p {
+            font-size: 12px;
+        }
+
+        .modal .form-group label {
+            font-size: 12px;
+        }
+
+        .modal .form-group input {
+            font-size: 12px;
+        }
+
+        .modal .btn {
+            font-size: 12px;
+            padding: 8px;
+        }
+
+        .modal .mfooter a {
+            font-size: 12px;
+        }
+
+        .modal .mfooter p {
+            font-size: 12px;
+        }
+
+        .modal .close {
+            font-size: 20px;
+        }
+    }
+
 
 
     </style>
@@ -330,8 +789,7 @@
                 <a href="#">HOME</a>
                 <a href="#">TAKE ACTION</a>
                 <a href="#">ABOUT US</a>
-                <a href="#">RESOURCES</a>
-                <a href="#">SIGN IN</a>
+                <a href="#" onclick="openModal()">SIGN IN</a>
             </div>
         </div>
     </header>
@@ -342,8 +800,8 @@
         <h1>Navigate the Future </h1>
         <h1 class="gradient" >of Our Planet</h1>
         <div class="buttons">
-            <button>Sign Up for An Account</button>
-            <button class="secondary">Sign Into Your Account</button>
+            <button onclick="window.location.href='create_account_page.html'">Sign Up for An Account</button>
+            <button class="secondary" onclick="openModal()">Sign Into Your Account</button>
         </div>
     </section>
     
@@ -424,7 +882,7 @@
             <h2 class="last-section-h2">JOIN TODAY</h2>
             <h1 class="last-section-h1gradient">Get Started With Us</h1>
             <div class="buttons">
-                <button class="button">Sign Up Now</button>
+                <button onclick="window.location.href='create_account_page.html'">Create An Account</button>
             </div>
         </div>
     </section>
@@ -451,7 +909,52 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Sign in modal -->
+    <div 
+        id="modal-target">
+    </div>
+
+     
     
+<!-- Sign in modal script -->
+
+<script>
+    function openModal() {
+        fetch('signin_modal.html')
+            .then(response => response.text())
+            .then(html => {
+                console.log(html)
+                const modalContainer = document.getElementById("modal-target")
+                modalContainer.innerHTML = html;
+
+                let innerModal = modalContainer.getElementsByClassName("modal")[0]
+                let boundingRect = innerModal.getBoundingClientRect()
+                let vw = window.innerWidth
+                innerModal.style.left = `${(vw - boundingRect.width)/2}px`
+                innerModal.style.top = `-1em`
+
+               
+                document.body.style.overflow = 'hidden'; //prevent background scroll
+
+                // close modal button
+                const closeModalBtn = innerModal.querySelector('.close');
+                if (closeModalBtn) {
+                    closeModalBtn.addEventListener('click', () => {
+                        innerModal.remove();
+                        document.body.style.overflow = ''; 
+                    });
+                }
+            })
+
+            
+            .catch(error => {
+                console.error('Error loading modal:', error);
+            });
+    }
+</script>
+
 
 </body>
 </html>
