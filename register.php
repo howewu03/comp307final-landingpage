@@ -25,7 +25,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         die('Invalid email format');
     }
+    
+    // Check if passwords match
+    if ($_POST['password'] !== $_POST['confirm-password']) {
+        die('Passwords do not match.');
+    }
 
+    
     // Hash the password
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
