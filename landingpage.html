@@ -21,14 +21,10 @@
             align-items: center;
             width: 100%;
             max-width: 100%;
-            margin: 0 auto;
             padding: 30px;
             position: absolute;
-            top: 0;
-            left: 0;
             z-index: 100;
             box-sizing: border-box;
-            overflow: hidden;
         }
 
         .navbar-logo {
@@ -58,7 +54,7 @@
         /* Hero Section */
         .hero {
             height: 110vh;
-            background: url('heroimage.png') no-repeat;
+            background: url('images/heroimage.png') no-repeat;
             background-size: cover;
             background-attachment: fixed;
             background-position: center center;
@@ -245,7 +241,7 @@
         .last-section {
             height: 120vh;
             width: 100%;
-            background: url(heroimage2.png) no-repeat;
+            background: url('images/heroimage2.png') no-repeat;
             background-position: center center;
             background-size: cover;
             background-attachment: fixed;
@@ -318,126 +314,6 @@
             font-size: 12px;
             line-height: 2;
         }
-
-
-
-
-
-        /* Modal styles */
-
-        .modal {
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 50vh;
-            height: 70%;
-            overflow:auto;
-            background: #ffffff;
-            margin: 10% auto; 
-            padding: 40px 40px 0;
-            border-radius: 1em; 
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .modal h4 {
-            font-size: 32px;
-            font-weight: 400;
-            color: #000000;
-            margin-bottom: 10px;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .modal p {
-            font-size: 16px;
-            font-weight: 400;
-            color: rgba(32, 32, 32, 0.7);
-            margin-bottom: 30px;
-        }
-
-        .modal .form-group {
-            text-align: left;
-            margin-bottom: 40px;
-        }
-
-        .modal .form-group label {
-            font-size: 16px;
-            font-weight: 400;
-            color: #000000;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .modal .form-group input {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 400;
-            color: rgba(32, 32, 32, 0.7);
-            padding: 10px;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
-
-        .modal .btn {
-            background-color: rgba(57, 166, 255, 0.65);
-            color: #ffffff;
-            font-size: 16px;
-            font-weight: 700;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        .modal .btn:hover {
-            background-color: #39a6ff;
-        }
-
-        .modal .mfooter {
-            margin-top: 80px;
-            padding-bottom: 20px;
-            margin-left: -40px;
-            margin-right: -40px;
-            padding-top: 15px;
-            border-top: 1px solid #e0e0e0;
-            border-bottom-left-radius: 1em;
-            border-bottom-right-radius: 1em;
-            background-color: #f3f3f3;
-        }
-
-        .modal .mfooter p {
-            font-size: 16px;
-            font-weight: 400;
-            color: #000000;
-            margin: 0;
-        }
-
-        .modal .mfooter a {
-            font-size: 16px;
-            font-weight: 400;
-            color: #6ab6f4;
-            text-decoration: none;
-            margin-left: 5px;
-        }
-
-        .modal .mfooter a:hover {
-            text-decoration: underline;
-        }
-
-        .modal .close {
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            font-size: 40px;
-            font-weight: lighter;
-            color: #000;
-            cursor: pointer;
-        }
-
 
 
 
@@ -553,53 +429,15 @@
             font-size: 12px;
         }
 
-        /* Modal - Tablet */
-       
-        .modal{
-            width: 70vh;
-        }
-
-        .modal h4 {
-            font-size: 24px;
-        }
-
-        .modal p {
-            font-size: 14px;
-        }
-
-        .modal .form-group label {
-            font-size: 14px;
-        }
-
-        .modal .form-group input {
-            font-size: 14px;
-        }
-
-        .modal .btn {
-            font-size: 14px;
-            padding: 10px;
-        }
-
-        .modal .mfooter a{
-            font-size: 14px;
-        }
-
-        .modal .mfooter p{
-            font-size: 14px;
-        }
-        .modal .close{
-            font-size: 30px;
-        }
-  
 
     }
 
     
+    /* MOBILE VIEW */
 
     @media (max-width: 480px) {
 
         /* Navbar - Mobile */
-        
 
         .navbar-logo {
             width: 80px;
@@ -733,43 +571,6 @@
             font-size: 10px;
         }
 
-        /* Modal - Mobile */
-        .modal {
-            width: 60%;
-        }
-
-        .modal h4 {
-            font-size: 18px;
-        }
-
-        .modal p {
-            font-size: 12px;
-        }
-
-        .modal .form-group label {
-            font-size: 12px;
-        }
-
-        .modal .form-group input {
-            font-size: 12px;
-        }
-
-        .modal .btn {
-            font-size: 12px;
-            padding: 8px;
-        }
-
-        .modal .mfooter a {
-            font-size: 12px;
-        }
-
-        .modal .mfooter p {
-            font-size: 12px;
-        }
-
-        .modal .close {
-            font-size: 20px;
-        }
     }
 
 
@@ -784,7 +585,7 @@
     <!-- Header/Navbar -->
     <header>
         <div class="navbar">
-            <img src="landingpagelogo.png" alt="Climate Compass" class="navbar-logo">
+            <img src="images/landingpagelogo.png" alt="Climate Compass" class="navbar-logo">
             <div class="nav-links">
                 <a href="#">HOME</a>
                 <a href="#">TAKE ACTION</a>
@@ -818,7 +619,7 @@
                 </p>
             </div>
             <div class="image-content">
-                <img src="marine_animals.jpg" alt="Climate Story" class="section-image">
+                <img src="images/marine_animals.jpg" alt="Climate Story" class="section-image">
             </div>
         </div>
     </section>
@@ -827,7 +628,7 @@
     <section class="bluesection">
         <div class="content">
             <div class="image-content">
-                <img src="treeplant.png" alt="Climate Story" class="section-image">
+                <img src="images/treeplant.png" alt="Climate Story" class="section-image">
             </div>
             <div class="text-content">
                 <h2>Take Action For a Sustainable Future</h2>
@@ -852,7 +653,7 @@
                 </p>
             </div>
             <div class="image-content">
-                <img src="pollutioninfographic.png" alt="Climate Story" class="section-image">
+                <img src="images/pollutioninfographic.png" alt="Climate Story" class="section-image">
             </div>
         </div>
     </section>
@@ -862,7 +663,7 @@
     <section class="whitesection">
         <div class="content">
             <div class="image-content">
-                <img src="building.jpg" alt="Climate Story" class="section-image">
+                <img src="images/building.jpg" alt="Climate Story" class="section-image">
             </div>
             <div class="text-content">
                 <h2>Compare and Collaborate Across Communities</h2>
@@ -891,15 +692,15 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <!-- Left Section: Logo -->
+            <!-- Left Section - logo -->
             <div class="footer-logo">
-                <img src="logo-white.png" alt="Climate Compass Logo">
+                <img src="images/logo-white.png" alt="Climate Compass Logo">
             </div>
     
             <!-- Vertical Divider -->
             <div class="vertical-line"></div>
     
-            <!-- Right Section: Text Content -->
+            <!-- Right Section - text content -->
             <div class="footer-text">
                 <p>
                     At Climate Compass, we empower communities with data-driven insights to understand and navigate the impacts of climate change.
@@ -917,43 +718,43 @@
     </div>
 
      
-    
-<!-- Sign in modal script -->
+        
+    <!-- Sign in modal script -->
 
-<script>
-    function openModal() {
-        fetch('signin_modal.html')
-            .then(response => response.text())
-            .then(html => {
-                console.log(html)
-                const modalContainer = document.getElementById("modal-target")
-                modalContainer.innerHTML = html;
+    <script>
+        function openModal() {
+            fetch('signin_modal.html')
+                .then(response => response.text())
+                .then(html => {
+                    console.log(html)
+                    const modalContainer = document.getElementById("modal-target")
+                    modalContainer.innerHTML = html;
 
-                let innerModal = modalContainer.getElementsByClassName("modal")[0]
-                let boundingRect = innerModal.getBoundingClientRect()
-                let vw = window.innerWidth
-                innerModal.style.left = `${(vw - boundingRect.width)/2}px`
-                innerModal.style.top = `-1em`
+                    let innerModal = modalContainer.getElementsByClassName("modal")[0]
+                    let boundingRect = innerModal.getBoundingClientRect()
+                    let vw = window.innerWidth
+                    innerModal.style.left = `${(vw - boundingRect.width)/2}px`
+                    innerModal.style.top = `-1em`
 
-               
-                document.body.style.overflow = 'hidden'; //prevent background scroll
+                
+                    document.body.style.overflow = 'hidden'; //prevent background scroll
 
-                // close modal button
-                const closeModalBtn = innerModal.querySelector('.close');
-                if (closeModalBtn) {
-                    closeModalBtn.addEventListener('click', () => {
-                        innerModal.remove();
-                        document.body.style.overflow = ''; 
-                    });
-                }
-            })
+                    // close modal button
+                    const closeModalBtn = innerModal.querySelector('.close');
+                    if (closeModalBtn) {
+                        closeModalBtn.addEventListener('click', () => {
+                            innerModal.remove();
+                            document.body.style.overflow = ''; 
+                        });
+                    }
+                })
 
-            
-            .catch(error => {
-                console.error('Error loading modal:', error);
-            });
-    }
-</script>
+                
+                .catch(error => {
+                    console.error('Error loading modal:', error);
+                });
+        }
+    </script>
 
 
 </body>
