@@ -232,11 +232,11 @@
     
             form.addEventListener("submit", function (event) {
                 if (password.value !== confirmPassword.value) {
-                    event.preventDefault(); // Prevent form submission
-                    feedback.style.display = "block"; // Show feedback
-                    feedback.textContent = "Passwords do not match"; // Error message
+                    event.preventDefault(); 
+                    feedback.style.display = "block"; 
+                    feedback.textContent = "Passwords do not match"; 
                 } else {
-                    feedback.style.display = "none"; // Hide feedback if no error
+                    feedback.style.display = "none"; 
                 }
                 
             });
